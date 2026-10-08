@@ -1,0 +1,26 @@
+{
+  "name": "nodedatabase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sever.js",
+  "scripts": {
+    "dev": "node --watch src/server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "contract:emit": "prisma contract emit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@prisma/orm-postgres": "^8.0.0-rc.14",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "morgan": "^1.12.1"
+  },
+  "devDependencies": {
+    "@prisma/cli-engine": "^0.6.2",
+    "@types/node": "^26.6.4",
+    "prisma": "^8.0.0-rc.20"
+  }
+}

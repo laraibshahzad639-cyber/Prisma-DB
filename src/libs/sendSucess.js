@@ -1,0 +1,16 @@
+export const sendSuccess = (res, statusCode, message, data = null) => {
+  return res.status(statusCode).json({
+    success: true,
+    statusCode,
+    message,
+    data,
+  });
+};
+export const sendError=(res,statusCode,message,data=null)=>{
+    return res.status(statusCode).json({
+        sucess:false,
+        statusCode,
+        message,
+        data,
+    });
+};
